@@ -12,7 +12,7 @@ app.get("/aura/:user", (req, res) => {
     aura[user] = (aura[user] || 0) + valor;
 
     res.send(
-        `@${user} recebeu ${valor >= 0 ? "+" : ""}${valor} de Aura!`
+        `@${user} farmou ${valor >= 0 ? "+" : ""}${valor} de Aura! 💀💀💀`
     );
 });
 
@@ -21,7 +21,7 @@ app.get("/saldo/:user", (req, res) => {
     const user = req.params.user.toLowerCase();
 
     res.send(
-        `@${user}, sua Aura atual é ${aura[user] || 0}`
+        `@${user}, sua Aura atual é ${aura[user] || 0} Você é Chad ou Betinha?`
     );
 });
 
